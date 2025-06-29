@@ -1,3 +1,4 @@
+
 @import "tailwindcss";
 
 @plugin "tailwindcss-animate";
@@ -266,11 +267,11 @@
   }
 
   .card-cta {
-    @apply flex flex-row blue-gradient-dark rounded-3xl px-16 py-6 items-center justify-between max-sm:px-4;
+    @apply flex flex-col-reverse lg:flex-row blue-gradient-dark rounded-3xl px-6 py-6 items-center justify-between gap-6;
   }
 
   .interviews-section {
-    @apply flex flex-wrap gap-4 max-lg:flex-col w-full items-stretch;
+    @apply flex flex-row gap-6 max-lg:flex-col;
   }
 
   .interview-text {
@@ -286,7 +287,7 @@
   }
 
   .card-interview {
-    @apply dark-gradient rounded-2xl min-h-full flex flex-col p-6 relative overflow-hidden gap-10 justify-between;
+    @apply dark-gradient rounded-2xl min-h-[90px] flex items-center overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300;
 
     .badge-text {
       @apply text-sm font-semibold capitalize;

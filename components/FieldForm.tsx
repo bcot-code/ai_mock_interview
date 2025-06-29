@@ -7,7 +7,7 @@ import {
   FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
-import { Controller, FieldValues } from 'react-hook-form'
+import { Controller, FieldValues, Path, Control} from 'react-hook-form'
 
 
 
