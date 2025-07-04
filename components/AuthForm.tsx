@@ -58,6 +58,7 @@ const AuthForm = ({type}: {type: FormType}) => {
         }
         toast.success('Account created successfully. Please sign in.');
         router.push('/sign-in')
+        console.log("Redirecting to sign-in...")
       } else{
         const {email, password } = values
         const userCredentials = await signInWithEmailAndPassword(auth, email, password);
@@ -123,10 +124,8 @@ const AuthForm = ({type}: {type: FormType}) => {
           </form>
         </Form>
         <p className="text-center">
-          {!isSignIn ? 'No account yet?' : 'Have an account already?'}
-          <Link href={isSignIn ? '/sign-in' : '/sign-up'} className="font-bold text-user-primary ml-1">
-            {!isSignIn ? "Sign in" : "Sign up!"}
-          </Link>
+          {!isSignIn ? 'Have an account already?' : 'No account yet?'}<Link href={isSignIn ? '/sign-up' : '/sign-in'} className="font-bold text-user-primary ml-1">
+          {isSignIn ? 'Sign up!' : 'Sign in'} </Link>
         </p>
       </div>
     </div>
