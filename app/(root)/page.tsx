@@ -5,6 +5,7 @@ import Image from "next/image"
 import { dummyInterviews } from '@/constants'
 import InterviewCard from '@/components/InterviewCard'
 
+
 const page = () => {
   return (
     <div className="w-full max-w-[1200px] px-4">
