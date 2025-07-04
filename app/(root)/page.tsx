@@ -1,7 +1,9 @@
+// app/page.tsx
+
 export default function Home() {
   return (
-    <main className="flex items-center justify-center min-h-screen text-white text-2xl">
-      Welcome to PrepReju 👋
-    </main>
+    <div className="min-h-screen flex items-center justify-center text-white text-2xl">
+      ✅ Site is working! Now you can safely reintroduce auth logic.
+    </div>
   );
 }
