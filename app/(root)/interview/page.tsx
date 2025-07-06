@@ -2,6 +2,7 @@ import React from 'react'
 import Agent from '@/components/Agent'
 import { isAuthenticated } from "@/lib/actions/auth.action"
 import { redirect } from "next/navigation"
+import LogoutButton from '@/components/LogoutButton'
 
 
 const InterviewPage = async() => {
@@ -13,6 +14,7 @@ const InterviewPage = async() => {
    <main>
     <h3>Interview Generation</h3>
     <Agent userName="You" userId="user1" type="generate"/>
+    <LogoutButton />
    </main> 
   );
 };
