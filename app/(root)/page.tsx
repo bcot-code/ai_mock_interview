@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from "next/image"
 import { dummyInterviews } from '@/constants'
 import InterviewCard from '@/components/InterviewCard'
+import LogoutButton from '@/components/LogoutButton'
 
 
 const Homepage = () => {
@@ -39,6 +40,7 @@ const Homepage = () => {
           ))}
           {/* <p>You havent done any interviews yet.</p> */}
         </div>
+        <LogoutButton />
       </section>
     </div>
   )
