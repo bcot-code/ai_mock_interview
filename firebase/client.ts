@@ -5,7 +5,7 @@ import { getFirestore } from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyABLQRFc_s2cS5moECAaxszp4LJqDw6-hQ",
+  apiKey: process.env.GOOGLE_GENERATE_AI_API_KEY,
   authDomain: "prepreju.firebaseapp.com",
   projectId: "prepreju",
   storageBucket: "prepreju.firebasestorage.app",
